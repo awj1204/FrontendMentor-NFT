@@ -1,0 +1,131 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+}
+.container {
+    background-color: hsl(216, 50%, 16%);
+    width: 340px;
+    height: 570px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 3%;
+}
+.container * {
+    position: relative;
+}
+.main-image {
+    top: 25px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 300px;
+    border-radius: 3%;
+    z-index: 1;
+}
+
+.layer {
+    background-color: hsla(178, 100%, 50%, 0.3);
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 300px;
+    border-radius: 3%;
+    height: 300px;
+    z-index: 3;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.view-image {
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 2;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.hover:hover .view-image, .hover:hover .layer{
+    opacity: 1;
+    transition-duration: 0.3s;
+}
+
+.number {
+    display: block;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600px;
+    font-size: 150%;
+    left: 20px;
+    top: 20px;
+}
+
+.main-text {
+    color: hsl(215, 51%, 70%);
+    font-style: normal;
+    font-size: 110%;
+    left: 20px;
+    top: 20px;
+}
+.common > li {
+    list-style:none;
+    top: 25px;
+    left: -20px;
+}
+.first {
+    color: hsl(178, 100%, 50%);
+    float: left;
+}
+
+.second {
+    color: hsl(215, 51%, 70%);
+    float: right;
+}
+.second img {
+    top:-0.5px;
+}
+.common_image {
+    vertical-align: text-bottom;
+}
+
+.bottom {
+    left: -15px;
+    top: 3px;
+}
+.profile-background {
+    width:33px;
+    top: 50px;
+    z-index: 1;
+}
+
+hr {
+    border:0;
+    top: 45px;
+    text-align: center;
+    width: 300px;
+    background-color:hsl(215, 51%, 30%);
+    height: 1px;
+} 
+
+.profile {
+    width: 30px;
+    top: 49px;
+    left: 35px;
+    z-index: 2;
+}
+.creater {
+    top: 40px;
+    left: 10px;
+    color:hsl(215, 51%, 70%);
+}
+
+.creater2 {
+    top: 40px;
+    left: 10px;
+    color: hsl(0, 0%, 100%);
+}
